@@ -1,0 +1,10 @@
+{
+  "name": "toolwizhub-dialcheck",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DialCheck — privacy-first phone number inspector: validate, format, and analyze numbers 100% in your browser.",
+  "scripts": {
+    "site": "python3 -m http.server 8094"
+  }
+}

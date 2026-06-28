@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dialcheck.toolwizhub.com/sitemap.xml

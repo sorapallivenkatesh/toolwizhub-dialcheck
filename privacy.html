@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — DialCheck | ToolWizHub</title>
+  <meta name="description" content="DialCheck runs 100% in your browser. Phone numbers are parsed locally — it collects nothing, sends nothing, and has no servers." />
+  <meta name="theme-color" content="#07070d" />
+  <link rel="canonical" href="https://dialcheck.toolwizhub.com/privacy.html" />
+  <meta property="og:title" content="Privacy Policy — DialCheck" />
+  <meta property="og:description" content="DialCheck runs 100% locally — your numbers never leave your browser." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dialcheck.toolwizhub.com/privacy.html" />
+  <link rel="icon" type="image/webp" href="assets/logo-icon.webp" />
+  <link rel="apple-touch-icon" href="assets/icon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="/" aria-label="DialCheck home">
+      <img src="assets/logo-icon.webp" alt="" width="34" height="34" />
+      <span>DialCheck</span>
+    </a>
+    <nav class="nav__links" id="nav-links">
+      <a href="/">← Back to DialCheck</a>
+      <span class="nav__pill">All free · 100% local</span>
+    </nav>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="legal">
+    <h1>Privacy Policy</h1>
+    <p class="legal__date">DialCheck · Last updated 28 June 2026</p>
+
+    <p class="tldr"><strong>The short version:</strong> DialCheck runs <strong>100% in your browser</strong>. Phone numbers you enter are parsed on your own device. It does not collect, upload, store remotely, sell, or transmit any data. No accounts, no analytics, no servers.</p>
+
+    <h2>What DialCheck does</h2>
+    <p>You type or paste a phone number (or a list of them). DialCheck validates and analyzes it locally using a bundled copy of Google's libphonenumber — country, line type, formats, time zone — and generates call/SMS/WhatsApp links, a QR code, and a vCard. All of this happens in your browser.</p>
+
+    <h2>What it accesses — and why</h2>
+    <ul>
+      <li><strong>The number(s) you enter</strong> — parsed in your browser only, to produce the analysis. They are not uploaded.</li>
+    </ul>
+
+    <h2>What it stores</h2>
+    <p>Only on your device, via the browser's <code>localStorage</code>:</p>
+    <ul>
+      <li>Your <strong>recent lookups</strong> (the last few numbers) for the "Recent" shortcuts — capped and clearable with the "clear" button. Stored only on your device.</li>
+    </ul>
+
+    <h2>What it does NOT do</h2>
+    <ul>
+      <li>No data collection, upload, or transmission to any server we run; no selling or sharing.</li>
+      <li>No accounts, sign-in, tracking, advertising, or analytics.</li>
+      <li><strong>No identity / "who owns this number" lookup.</strong> DialCheck never attempts to find a person's name or identity from a number, and there is no such data source involved.</li>
+      <li>No live carrier lookup — that would require contacting an external service; DialCheck stays offline and only notes the original number range.</li>
+    </ul>
+
+    <h2>Hosting</h2>
+    <p>The site is static hosting (Cloudflare Pages). Standard web-server access logs may record a page visit, but contain none of the numbers you analyze — those never leave your browser.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be posted here with a new date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Reach us via <a href="https://toolwizhub.com" target="_blank" rel="noopener">toolwizhub.com</a>.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/logo-horizontal.webp" alt="ToolWizHub" />
+        <p>Free, no-signup web tools — privacy-first, open, and instant.</p>
+        <span class="footer__pill">All free · No signup</span>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Tools</h4>
+          <a href="https://netlens.toolwizhub.com" target="_blank" rel="noopener">NetLens</a>
+          <a href="https://spendlens.toolwizhub.com" target="_blank" rel="noopener">SpendLens</a>
+          <a href="https://tickbox.toolwizhub.com" target="_blank" rel="noopener">Tickbox</a>
+        </div>
+        <div class="footer__col">
+          <h4>Project</h4>
+          <a href="/">DialCheck</a>
+          <a href="https://toolwizhub.com" target="_blank" rel="noopener">ToolWizHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span class="footer__copy">© <span id="year">2026</span> ToolWizHub · 100% local</span>
+      <span class="footer__made">Crafted with a bit of magic 🪄</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var nav = document.getElementById("nav"), t = document.getElementById("nav-toggle"), l = document.getElementById("nav-links");
+      if (t && nav) t.addEventListener("click", function () { t.setAttribute("aria-expanded", String(nav.classList.toggle("is-open"))); });
+      if (l) l.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { nav.classList.remove("is-open"); }); });
+      var y = document.getElementById("year"); if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
