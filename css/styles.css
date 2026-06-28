@@ -32,7 +32,7 @@ button, select, input, textarea { font-family: inherit; }
 .no-splash .splash { display: none; }
 .splash__stage { position: relative; display: grid; place-items: center; gap: 16px; }
 .splash__glow { position: absolute; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(129,140,248,.45), transparent 65%); filter: blur(22px); }
-.splash__logo { width: 92px; height: 92px; border-radius: 22px; position: relative; animation: pop .6s ease; }
+.splash__logo { width: 150px; height: auto; position: relative; animation: pop .6s ease; }
 .splash__tagline { font-family: var(--display); font-weight: 700; font-size: 26px; letter-spacing: .5px; }
 .splash__bar { width: 170px; height: 4px; border-radius: 4px; background: var(--line); overflow: hidden; }
 .splash__bar span { display: block; height: 100%; width: 0; background: var(--grad); animation: load 1.3s ease forwards; }

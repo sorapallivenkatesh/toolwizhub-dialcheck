@@ -3,7 +3,7 @@ const CACHE = "dialcheck-v1";
 const ASSETS = [
   "./", "index.html", "privacy.html", "css/styles.css",
   "js/app.js", "js/data.js", "lib/libphonenumber-max.js", "lib/qrcode.js",
-  "assets/logo-icon.webp", "assets/logo-horizontal.webp",
+  "assets/logo-icon.webp", "assets/logo-horizontal.webp", "assets/logo-full.webp",
   "assets/icon-192.png", "assets/icon-512.png"
 ];
 self.addEventListener("install", (e) => {
